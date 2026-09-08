@@ -597,7 +597,7 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
   })
 
   const messageShellClass = isUser
-    ? "overflow-hidden rounded-2xl bg-neutral-200/70 px-3.5 py-2 text-[13.5px] text-slate-900 border-0 shadow-none dark:bg-[#29282c] dark:text-[#f2f0ec] backdrop-blur-md"
+    ? "overflow-hidden rounded-2xl bg-neutral-200/70 px-3.5 py-2 text-[13.5px] text-slate-900 border-0 shadow-none dark:bg-[#2f2f2f] dark:text-[#e6e6e6] backdrop-blur-md"
     : "overflow-visible border-0 bg-transparent px-0 py-0 text-foreground shadow-none"
 
   const shouldShowMinimalLoader =

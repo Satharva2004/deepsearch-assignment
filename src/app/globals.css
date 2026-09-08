@@ -70,7 +70,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", var(--font-geist-sans), sans-serif;
+  --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
   --font-mono: var(--font-geist-mono);
   --font-silkscreen: var(--font-silkscreen);
   --font-playfair: var(--font-playfair);
@@ -156,37 +156,37 @@
 }
 
 .dark {
-  --background: #17171a;
-  --foreground: #f2f0ec;
-  --card: #201f23;
-  --card-foreground: #f2f0ec;
-  --popover: #201f23;
-  --popover-foreground: #f2f0ec;
-  --primary: #f2f0ec;
-  --primary-foreground: #17171a;
-  --secondary: #232226;
-  --secondary-foreground: #f2f0ec;
-  --muted: #232226;
-  --muted-foreground: #9a948b;
-  --accent: #29282c;
-  --accent-foreground: #f2f0ec;
+  --background: #191919;
+  --foreground: #e6e6e6;
+  --card: #202020;
+  --card-foreground: #e6e6e6;
+  --popover: #202020;
+  --popover-foreground: #e6e6e6;
+  --primary: #e6e6e6;
+  --primary-foreground: #191919;
+  --secondary: #2f2f2f;
+  --secondary-foreground: #e6e6e6;
+  --muted: #2f2f2f;
+  --muted-foreground: #9b9b9b;
+  --accent: #2f2f2f;
+  --accent-foreground: #e6e6e6;
   --destructive: #ff453a;
-  --border: rgba(244, 237, 225, 0.08);
-  --input: #232226;
-  --ring: #9a948b;
-  --chart-1: #f2f0ec;
-  --chart-2: #9a948b;
-  --chart-3: #3d3b3f;
-  --chart-4: #29282c;
-  --chart-5: #232226;
-  --sidebar: #1b1a1e;
-  --sidebar-foreground: #f2f0ec;
-  --sidebar-primary: #f2f0ec;
-  --sidebar-primary-foreground: #17171a;
-  --sidebar-accent: #29282c;
-  --sidebar-accent-foreground: #f2f0ec;
-  --sidebar-border: rgba(244, 237, 225, 0.06);
-  --sidebar-ring: #9a948b;
+  --border: rgba(255, 255, 255, 0.055);
+  --input: #2f2f2f;
+  --ring: #9b9b9b;
+  --chart-1: #e6e6e6;
+  --chart-2: #9b9b9b;
+  --chart-3: #3d3d3d;
+  --chart-4: #2f2f2f;
+  --chart-5: #232323;
+  --sidebar: #202020;
+  --sidebar-foreground: #e6e6e6;
+  --sidebar-primary: #e6e6e6;
+  --sidebar-primary-foreground: #191919;
+  --sidebar-accent: #2f2f2f;
+  --sidebar-accent-foreground: #e6e6e6;
+  --sidebar-border: rgba(255, 255, 255, 0.055);
+  --sidebar-ring: #9b9b9b;
   --callout-status-tint: transparent;
   --callout-status-fg: #f2d5b5;
   --callout-advice-tint: transparent;
@@ -229,10 +229,7 @@
     position: fixed;
     inset: 0;
     z-index: -10;
-    background-image:
-      radial-gradient(circle at top, rgba(154, 148, 139, 0.12), transparent 34%),
-      radial-gradient(circle at 82% 8%, rgba(120, 110, 96, 0.14), transparent 22%),
-      linear-gradient(180deg, rgba(19, 19, 22, 1) 0%, rgba(32, 31, 35, 1) 48%, rgba(19, 19, 22, 1) 100%);
+    background-color: #191919;
     pointer-events: none;
     transform: translateZ(0);
   }
