@@ -14,7 +14,7 @@ const AUDIO_CONFIG = {
     MAX_INTENSITY: 255, // Maximum gray value (brighter)
     INTENSITY_RANGE: 155, // MAX_INTENSITY - MIN_INTENSITY
   },
-} as const
+} as const //hehehe
 
 interface AudioVisualizerProps {
   stream: MediaStream | null
