@@ -112,7 +112,7 @@ const StreamingParagraph = React.memo(({ text }: { text: string }) => {
   }, [text])
 
   return (
-    <p className="mb-3 text-[13px] sm:text-sm leading-relaxed text-foreground/90">
+    <p className="mb-3 text-[15px] sm:text-base leading-relaxed text-foreground/90">
       {words.map(w => (
         <span key={w.id} className={w.isNew ? 'luna-word-new' : undefined}>
           {w.t}
@@ -597,7 +597,7 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
   })
 
   const messageShellClass = isUser
-    ? "overflow-hidden rounded-2xl bg-neutral-200/70 px-3.5 py-2 text-[13.5px] text-slate-900 border-0 shadow-none dark:bg-[#2f2f2f] dark:text-[#e6e6e6] backdrop-blur-md"
+    ? "overflow-hidden rounded-2xl bg-neutral-200/70 px-3.5 py-2 text-[15px] text-slate-900 border-0 shadow-none dark:bg-[#2f2f2f] dark:text-[#e6e6e6] backdrop-blur-md"
     : "overflow-visible border-0 bg-transparent px-0 py-0 text-foreground shadow-none"
 
   const shouldShowMinimalLoader =
@@ -1500,7 +1500,7 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
-              className="relative min-h-[1.5em] overflow-hidden text-[13px] sm:text-sm leading-relaxed"
+              className="relative min-h-[1.5em] overflow-hidden text-[15px] sm:text-base leading-relaxed"
             >
               <MarkdownRenderer onLinkClick={(url) => openExternalPreview(url)}>
                 {content}

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist_Mono, IBM_Plex_Sans, Playfair_Display, Silkscreen } from "next/font/google";
+import { Geist_Mono, Space_Grotesk, Playfair_Display, Silkscreen } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { AuthProvider } from "@/contexts/auth-context";
@@ -7,7 +7,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@vercel/analytics/next";
 import { AnimationProvider } from "@/components/ui/animation-provider";
 
-const geistSans = IBM_Plex_Sans({
+const geistSans = Space_Grotesk({
   variable: "--font-geist-sans",
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
